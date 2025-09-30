@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makitt - DIY Craft Kits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'makitt-red': '#B91C1C',
+              'makitt-paper': '#F3EADE',
+              'makitt-gold': '#DAA520',
+              'makitt-dark': '#333333',
+            },
+            fontFamily: {
+              'serif': ['Playfair Display', 'serif'],
+              'sans': ['Inter', 'sans-serif'],
+              'script': ['Dancing Script', 'cursive'],
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'slide-in-left': {
+                '0%': { transform: 'translateX(-50px)', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' },
+              },
+              'slide-in-right': {
+                '0%': { transform: 'translateX(50px)', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' },
+              },
+               'spin-subtle': {
+                '0%': { transform: 'rotate(0deg)' },
+                '100%': { transform: 'rotate(360deg)' },
+              },
+              'zoom-out': {
+                '0%': { transform: 'scale(1.1)' },
+                '100%': { transform: 'scale(1)' },
+              },
+              'slide-in-skew': {
+                '0%': { opacity: '0', transform: 'translateY(100%) skewY(8deg)' },
+                '100%': { opacity: '1', transform: 'translateY(0) skewY(0)' },
+              },
+              'ken-burns': {
+                '0%': { transform: 'scale(1.1)' },
+                '100%': { transform: 'scale(1)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 1s ease-out forwards',
+              'fade-in-up': 'fade-in-up 1s ease-out forwards',
+              'slide-in-left': 'slide-in-left 1s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+              'slide-in-right': 'slide-in-right 1s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+              'spin-subtle': 'spin-subtle 2s ease-out',
+              'zoom-out': 'zoom-out 0.8s ease-out forwards',
+              'slide-in-skew': 'slide-in-skew 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+              'ken-burns': 'ken-burns 7s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .cursor-none * { cursor: none; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      html { scroll-behavior: smooth; }
+      body {
+        background-color: #F3EADE;
+        font-family: 'Inter', sans-serif;
+        color: #333333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="cursor-none">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
