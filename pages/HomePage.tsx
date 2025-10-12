@@ -72,7 +72,7 @@ export const HomePage: React.FC = () => {
     {
       title: "Mend with Gold, Beautifully",
       subtitle: "Embrace imperfection and create unique art with our Kintsugi Repair Kit.",
-      buttonText: "View Kintsugi Kit",
+      buttonText: "View Fridge Magnet",
       buttonLink: "/product/kintsugi-repair-kit",
       bgImage: "https://itokri.com/cdn/shop/articles/header6_1_bf61afaa-180c-4ea9-a2fb-be108b9ca401.jpg?v=1738050867" // Kintsugi pottery
     }
