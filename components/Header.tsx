@@ -65,7 +65,7 @@ export const Header: React.FC = () => {
           {/* Signed Out → Show Sign In Button */}
           <SignedOut>
             <SignInButton mode="modal">
-              <button className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-makitt-red hover:bg-makitt-dark rounded-full transition-all duration-300 z-[10000]">
+              <button className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-makitt-red hover:bg-makitt-dark rounded-full transition-all duration-300 z-[1000]">
                 <LogIn size={18} />
                 Sign In
               </button>
