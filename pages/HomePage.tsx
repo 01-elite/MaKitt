@@ -143,7 +143,7 @@ export const HomePage: React.FC = () => {
       caption: 'Made a necklace for my sister.'
     },
     {
-      img: 'https://media.gettyimages.com/id/1461035539/photo/indian-woman-in-a-sari-making-rangoli-on-floor.jpg?s=612x612&w=gi&k=20&c=32M94NLGDQW67lbV8_7FDDLXs4_B7MESGfC0zL6FXV0=' ,     handle: '@rangoli_mends',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyOuC8VeDZj9Kdi3I8Su5dfEUDocmvj_xuMg&s' ,     handle: '@rangoli_mends',
       caption: 'Rangoli Making with MaKitt.'
     },
     {
